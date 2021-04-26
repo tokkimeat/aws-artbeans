@@ -14,14 +14,14 @@ import lombok.extern.slf4j.Slf4j;
 @Component
 public class AuthInterceptor implements HandlerInterceptor {
 	
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-			throws Exception {
-		HttpSession hs = request.getSession();
-		if(hs.getAttribute("user")==null) {
-			response.sendRedirect("/views/user/login");
-			return false;
-		}
-		return true;
-	}
+//	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+//			throws Exception {
+//		HttpSession hs = request.getSession();
+//		if(hs.getAttribute("user")==null) {
+//			response.sendRedirect("/views/user/login");
+//			return false;
+//		}
+//		return true;
+//	}
 
 }
